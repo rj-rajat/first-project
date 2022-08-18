@@ -142,7 +142,7 @@ class GameWindow(Window):
         self.laser_state=False
         self.write_state=False
 #stats
-        self.stats=pyglet.sprite.Sprite(img=pyglet.image.load("stats.png"),x=800,y=200)
+        self.stats=pyglet.sprite.Sprite(img=pyglet.image.load("stats.png"),x=800,y=300)
         self.enemy_kill=0
         self.score=0
         self.g_count=0
@@ -151,7 +151,7 @@ class GameWindow(Window):
         self.enemy_kill_lbl=Label(text=str(self.enemy_kill),font_size=12,bold=False,font_name="Koster Xmas Special", x=900,color=(255,0,0,255),y=570,anchor_x='center',anchor_y='center',batch=self.lbl_batch)
         self.score_lbl=Label(text=str(self.score),font_size=12,bold=False, x=900,color=(255,0,0,255),font_name="Koster Xmas Special",y=420,anchor_x='center',anchor_y='center',batch=self.lbl_batch)
         self.high_score_lbl=Label(text=str(self.high_score),font_size=12,font_name="Koster Xmas Special",bold=False, x=900,color=(255,0,0,255),y=680,anchor_x='center',anchor_y='center',batch=self.lbl_batch)
-        self.level_lbl=Label(text=str(self.level),font_name="Koster Xmas Special",font_size=12,bold=False, x=900,color=(255,0,0,255),y=300,anchor_x='center',anchor_y='center',batch=self.lbl_batch)
+        self.level_lbl=Label(text=str(self.level),font_name="Koster Xmas Special",font_size=12,bold=False, x=900,color=(255,0,0,255),y=330,anchor_x='center',anchor_y='center',batch=self.lbl_batch)
 # enemies list
         self.enemies=["enem1.png","enem2.png","enem1.png","enem1.png",'enem1.png']
         self.enemies_list=[]
